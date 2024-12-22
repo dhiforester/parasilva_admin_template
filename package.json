@@ -4,6 +4,7 @@
   "homepage": "https://mdbootstrap.com/docs/standard/",
   "license": "SEE LICENSE IN <License.txt>",
   "dependencies": {
+    "apexcharts": "^4.3.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "jquery": "^3.7.1",
