@@ -1,0 +1,157 @@
+/* Custom Styles */
+
+/* Navbar */
+.navbar {
+  background-color: #7532f9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; /* Ensures navbar stays above other elements */
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  justify-content: center; /* Menyelaraskan menu secara horizontal */
+}
+
+.navbar .nav-link {
+  font-size: 11pt;
+  color: #fff;
+  margin: 0 15px; /* Memberi jarak antar item menu */
+}
+
+.navbar .nav-link:hover {
+  color: #cce1ff;
+}
+
+.navbar .nav-item.dropdown .dropdown-menu {
+  background-color: #5a20b5; /* Warna lebih gelap untuk dropdown */
+  border: none; /* Menghilangkan border default */
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: #fff;
+  border-bottom: 1px solid #7430f9; /* Garis pemisah antar item dropdown */
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #4a17a2; /* Warna saat hover untuk item dropdown */
+}
+
+/* Menambahkan garis pada setiap item menu di navbar */
+.navbar .nav-item .menu_atas {
+  border: 2px solid #cce1ff; /* Garis pemisah antar item menu */
+  border-radius: 20px; /* Menambahkan radius sudut untuk tampilan lebih lembut */
+  margin: 3px; /* Memberi jarak antar item menu */
+  padding: 5px 15px;
+}
+
+.navbar .nav-item:last-child {
+  border-right: none; /* Menghapus garis pada item terakhir */
+}
+/* My rofile Menu */
+/* Menu My Profile */
+.navbar-nav .nav-item .nav-link.my_profile {
+  color: #fff; /* Teks berwarna putih */
+  background-color: transparent; /* Latar belakang transparan */
+  border: 2px solid #fff; /* Menambahkan garis putih di sekitar menu */
+  border-radius: 20px; /* Menambahkan radius sudut untuk tampilan lebih lembut */
+  padding: 5px 15px; /* Memberikan padding untuk ruang lebih banyak di dalam tombol */
+  text-decoration: none; /* Menghilangkan garis bawah pada teks */
+  transition: all 0.3s ease; /* Transisi halus saat hover */
+}
+
+.navbar-nav .nav-item .nav-link.my_profile:hover {
+  background-color: #fff; /* Menambahkan latar belakang putih saat hover */
+  color: #7430f9; /* Mengubah warna teks menjadi warna navbar saat hover */
+  border-color: #7430f9; /* Menyesuaikan warna border saat hover */
+}
+/* Breadcrumb */
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #8090f0;
+}
+.breadcrumb-item.active {
+  color: #555;
+}
+
+/* Main Content Padding */
+body {
+  padding-top: 56px; /* Adjust according to navbar height */
+  padding-bottom: 56px; /* Adjust according to footer height */
+  /* set background color with gradient */
+  background: rgb(238,255,242);
+  background: linear-gradient(90deg, rgba(238,255,242,1) 0%, rgba(228,229,255,1) 52%, rgba(255,238,253,1) 100%);
+}
+/* Description page */
+p.text_description {
+  text-align: justify;
+  font-size: 14px;
+  color: #555;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+/* Customisasi Card */
+/* Card Styling */
+.card {
+  background-color: #fff;
+  border-radius: 15px; /* Lengkungan sudut lebih lembut */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease; /* Animasi transisi yang halus saat hover */
+  overflow: hidden; /* Menghindari konten keluar dari radius lengkung */
+}
+
+/* Optional: Menambahkan padding di dalam card untuk ruang lebih banyak */
+.card-body {
+  padding: 15px;
+}
+
+/* Footer */
+.footer {
+  background-color: #7532f9;
+  color: #fff;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-group-menu {
+  display: flex;
+  justify-content: space-between; /* Menjaga tombol berada di sepanjang footer */
+  width: 100%;
+}
+
+.footer-group-menu a {
+  color: #fff;
+  font-size: 10pt;
+  text-decoration: none;
+  padding: 5px 0; 
+  /* Mengurangi padding untuk tombol lebih padat */
+  text-align: center;
+  flex-grow: 1; /* Membuat tombol mengisi lebar yang tersedia secara merata */
+}
+
+.footer-group-menu a:hover {
+  color: #cce1ff;
+  background-color: #5c1ddb;
+}
+
+.footer-group-menu a.active {
+  color: #cce1ff;
+  background-color: #5c1ddb;
+}
+
+/* Memastikan ikon dan teks berada di tengah */
+.footer-group-menu a i {
+  font-size: 20px; /* Ukuran ikon */
+  display: block;
+  margin-bottom: 3px; /* Memberikan jarak antara ikon dan teks */
+}
+
+
