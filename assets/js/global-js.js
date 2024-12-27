@@ -11,3 +11,25 @@ $(document).ready(function() {
         window.location.href = 'index.html'; // Mengarahkan ke halaman index.php
     });
 });
+
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 4, 
+    spaceBetween: 10, 
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        // Responsif: menampilkan 2 card per halaman pada layar kecil
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 4, // Kembali ke 4 card per halaman pada layar lebih besar
+        },
+    },
+});

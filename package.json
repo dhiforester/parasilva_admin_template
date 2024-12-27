@@ -9,6 +9,7 @@
     "bootstrap-icons": "^1.11.3",
     "jquery": "^3.7.1",
     "lightbox2": "^2.11.5",
-    "sweetalert2": "^11.15.3"
+    "sweetalert2": "^11.15.3",
+    "swiper": "^11.1.15"
   }
 }

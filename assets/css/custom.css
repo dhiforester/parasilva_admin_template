@@ -1,3 +1,6 @@
+html{
+  overflow-x: hidden;
+}
 /* Custom Styles */
 /* Font Custome */
 @font-face {
@@ -480,4 +483,60 @@ a.title_page{
   height: 200px; /* Sesuaikan ketinggian yang diinginkan */
   object-fit: cover; /* Menjaga rasio gambar */
   width: 100%; /* Mengisi lebar kontainer */
+}
+
+/* Swiper */
+/* Card Tanpa Latar Belakang dan Garis Pinggir Hitam */
+.card-transparant-outline {
+  border: 2px solid #7532f9;  /* Garis pinggir hitam */
+  background-color: transparent;  /* Tanpa latar belakang */
+  box-shadow: none;
+}
+
+/* Swiper Styling */
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Styling untuk item icon yang berbentuk kotak dengan radius */
+.custome_item_icon {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;  /* Batasan lebar item icon */
+  padding: 10px;
+  background-color: #f0f0f0;  /* Warna latar belakang item icon */
+  border-radius: 10px;  /* Radius sudut */
+  color: #000;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan untuk item */
+  transition: all 0.3s ease;
+}
+
+.custome_item_icon:hover {
+  background-color: #e0e0e0;  /* Efek hover */
+  transform: scale(1.05);
+}
+
+/* Styling untuk ikon di dalam item */
+.custome_item_icon i {
+  font-size: 24px;
+  margin-right: 10px;  /* Jarak antara ikon dan teks */
+}
+
+/* Pagination dan Navigation */
+.swiper-button-next, .swiper-button-prev {
+  color: black;  /* Warna tombol navigasi */
+}
+
+.swiper-pagination-bullet {
+  background-color: black;  /* Warna bullet pagination */
 }

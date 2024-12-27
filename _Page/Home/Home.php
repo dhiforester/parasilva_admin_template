@@ -12,6 +12,72 @@
 <p class="text-muted text_description">This is the description of the page. Add relevant details about the content here.</p>
 <div class="content mt-3">
     <div class="row mb-3">
+        <div class="col-md-12 mb-3">
+            <div class="card card-transparant-outline">
+                <div class="card-body">
+                    <div class="swiper-container">
+                        <!-- Slider main container -->
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <a href="" class="custome_item_icon text-center">
+                                    <i class="bi bi-house"></i><br> Menu 1
+                                </a>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <a href="" class="custome_item_icon text-center">
+                                    <i class="bi bi-house"></i><br> Menu 2
+                                </a>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <a href="" class="custome_item_icon text-center">
+                                    <i class="bi bi-house"></i><br> Menu 3
+                                </a>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide">
+                                <a href="" class="custome_item_icon text-center">
+                                    <i class="bi bi-house"></i><br> Menu 4
+                                </a>
+                            </div>
+                            <!-- Slide 5 -->
+                            <div class="swiper-slide">
+                                <a href="" class="custome_item_icon text-center">
+                                    <i class="bi bi-house"></i><br> Menu 5
+                                </a>
+                            </div>
+                            <!-- Slide 6 -->
+                            <div class="swiper-slide">
+                                <a href="" class="custome_item_icon text-center">
+                                    <i class="bi bi-house"></i><br> Menu 5
+                                </a>
+                            </div>
+                            <!-- Slide 7 -->
+                            <div class="swiper-slide">
+                                <a href="" class="custome_item_icon text-center">
+                                    <i class="bi bi-house"></i><br> Menu 6
+                                </a>
+                            </div>
+                            <!-- Slide 8-->
+                            <div class="swiper-slide">
+                                <a href="" class="custome_item_icon text-center">
+                                    <i class="bi bi-house"></i><br> Menu 7
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Pagination and Navigation -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mb-3">
         <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-3">
         <div class="card dashboard card_dashboard_pelanggan">
             <div class="card-body">
@@ -53,9 +119,9 @@
             </div>
         </div>
         </div>
-        <div class="col-md-3  mb-3">
+        <div class="col-md-3 text-center mb-3">
         <div class="card">
-            <div class="card-body" id="example_apexchart_donut">
+            <div class="card-body text-center" id="example_apexchart_donut">
             <!-- Example Apexchart Donut -->
             </div>
         </div>

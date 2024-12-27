@@ -83,6 +83,8 @@
       <link rel="stylesheet" href="assets/css/mdb.min.css" />
       <!-- Lightbox -->
       <link href="node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
+      <!-- Swiper -->
+      <link href="node_modules/swiper/swiper-bundle.min.css?v=1" rel="stylesheet" />
       <!-- Custom CSS -->
       <link rel="stylesheet" href="assets/css/custom.css?v=1" />
     </head>

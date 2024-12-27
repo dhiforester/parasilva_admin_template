@@ -8,8 +8,16 @@
 <!--Sweet Alert 2-->
 <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 <!-- apexcharts -->
-<script src="node_modules/apexcharts/dist/apexcharts.min.js"></script>
+<?php
+    //Hanya Muncul Pada Halaman Tertentu
+    if($Page==""){
+        echo '<script src="node_modules/apexcharts/dist/apexcharts.min.js"></script>';
+    }
+?>
 <!-- Lightbox -->
 <script src="node_modules/lightbox2/dist/js/lightbox.js"></script>
+
+<!-- Swiper -->
+<script src="node_modules/swiper/swiper-bundle.min.js"></script>
 <!-- Global js -->
 <script src="assets/js/global-js.js"></script>

@@ -59,10 +59,10 @@ $(document).ready(function () {
         breakpoint: 480,
         options: {
             chart: {
-            width: 300, // Lebar chart untuk layar kecil
+                width: 100, // Lebar chart untuk layar kecil
             },
             legend: {
-            position: 'bottom', // Posisi legenda untuk layar kecil
+                position: 'bottom', // Posisi legenda untuk layar kecil
             },
         },
         },
