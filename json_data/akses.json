@@ -1,0 +1,42 @@
+[
+    {
+        "id_akses": "1",
+        "nama": "Solihul Hadi",
+        "email": "dhiforester@gmail.com",
+        "kontak": "089601154726",
+        "password": "$2y$10$zWqFi8ZJ/V1qur6AaJk1T.TsVsUEWFAuHMSyZ1HD9s/jj5JqTooqG",
+        "status": "Active"
+    },
+    {
+        "id_akses": "2",
+        "nama": "Santi Nursari",
+        "email": "santi_nursari11@gmail.com",
+        "kontak": "08960734527",
+        "password": "$2y$10$zWqFi8ZJ/V1qur6AaJk1T.TsVsUEWFAuHMSyZ1HD9s/jj5JqTooqG",
+        "status": "Block"
+    },
+    {
+        "id_akses": "3",
+        "nama": "Ali Rahman",
+        "email": "ali.rahman99@gmail.com",
+        "kontak": "08960781456",
+        "password": "$2y$10$zWqFi8ZJ/V1qur6AaJk1T.TsVsUEWFAuHMSyZ1HD9s/jj5JqTooqG",
+        "status": "Active"
+    },
+    {
+        "id_akses": "4",
+        "nama": "Dewi Lestari",
+        "email": "dewi.lestari@gmail.com",
+        "kontak": "08960891234",
+        "password": "$2y$10$zWqFi8ZJ/V1qur6AaJk1T.TsVsUEWFAuHMSyZ1HD9s/jj5JqTooqG",
+        "status": "Active"
+    },
+    {
+        "id_akses": "5",
+        "nama": "Rizky Fauzan",
+        "email": "rizky.fauzan@gmail.com",
+        "kontak": "08960784561",
+        "password": "$2y$10$zWqFi8ZJ/V1qur6AaJk1T.TsVsUEWFAuHMSyZ1HD9s/jj5JqTooqG",
+        "status": "Block"
+    }
+]

@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    // Simpan preloader aktif selama 1 detik setelah halaman dimuat
+    setTimeout(function () {
+        $('#preloader').fadeOut('slow', function () {
+        $(this).remove(); // Hapus elemen preloader dari DOM
+        });
+    }, 1000); // Delay 1 detik
     // Event listener untuk tombol dengan ID #back_home
     $('#back_home').on('click', function(event) {
         event.preventDefault(); // Mencegah aksi default jika tombol adalah tautan

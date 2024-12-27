@@ -1,0 +1,15 @@
+{
+    "changelog": [
+        {
+            "version": "1.0.0",
+            "release_date": "2024-12-26",
+            "changes": {
+                "added": [
+                    "First released as a trial application"
+                ],
+                "fixed": [],
+                "changed": []
+            }
+        }
+    ]
+}

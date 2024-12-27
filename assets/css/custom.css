@@ -1,5 +1,38 @@
 /* Custom Styles */
+/* Font Custome */
+@font-face {
+  font-family: 'MinecraftPE'; /* Nama font yang akan Anda gunakan */
+  src: url('../../assets/font/MINECRAFT.ttf') format('truetype'); /* Path ke file font */
+  font-weight: normal; /* Pilihan berat font */
+  font-style: normal; /* Pilihan gaya font */
+}
+@font-face {
+  font-family: 'ClassicalDiary'; /* Nama font yang akan Anda gunakan */
+  src: url('../../assets/font/ClassicalDiary.ttf') format('truetype'); /* Path ke file font */
+}
+@font-face {
+  font-family: '02_APompadourTextSample'; /* Nama font yang akan Anda gunakan */
+  src: url('../../assets/font/02_APompadourTextSample.ttf') format('truetype'); /* Path ke file font */
+}
+.nama_web {
+  font-family: '02_APompadourTextSample', sans-serif !important;
+  font-size: 20pt;
+  align-items: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
 
+/* Media query untuk perangkat mobile */
+@media (max-width: 768px) { /* Atur breakpoint sesuai kebutuhan */
+  .nama_web {
+    font-size: 16pt; /* Ukuran font lebih kecil untuk layar mobile */
+  }
+}
+
+@media (max-width: 480px) { /* Atur breakpoint untuk layar yang lebih kecil */
+  .nama_web {
+    font-size: 12pt; /* Ukuran font lebih kecil lagi untuk perangkat kecil */
+  }
+}
 /* Navbar */
 .navbar {
   background-color: #7532f9;
@@ -24,6 +57,7 @@
   color: #cce1ff;
 }
 
+/* Dropdown menu */
 .navbar .nav-item.dropdown .dropdown-menu {
   background-color: #5a20b5; /* Warna lebih gelap untuk dropdown */
   border: none; /* Menghilangkan border default */
@@ -32,40 +66,92 @@
 .navbar .dropdown-menu .dropdown-item {
   color: #fff;
   border-bottom: 1px solid #7430f9; /* Garis pemisah antar item dropdown */
+  padding: 10px 20px; /* Ruang lebih untuk item dropdown */
 }
 
 .navbar .dropdown-menu .dropdown-item:hover {
-  background-color: #4a17a2; /* Warna saat hover untuk item dropdown */
+  background-color: #4a17a2; /* Warna saat hover */
 }
 
-/* Menambahkan garis pada setiap item menu di navbar */
-.navbar .nav-item .menu_atas {
-  border: 2px solid #cce1ff; /* Garis pemisah antar item menu */
-  border-radius: 20px; /* Menambahkan radius sudut untuk tampilan lebih lembut */
-  margin: 3px; /* Memberi jarak antar item menu */
-  padding: 5px 15px;
+/* Divider pada dropdown */
+.navbar .dropdown-menu .dropdown-divider {
+  border-top: 1px solid #7430f9; /* Divider dengan warna yang sesuai */
 }
 
-.navbar .nav-item:last-child {
-  border-right: none; /* Menghapus garis pada item terakhir */
+/* Logout dengan warna merah */
+.navbar .dropdown-menu .dropdown-item.text-danger {
+  color: #ff6b6b; /* Warna merah untuk logout */
 }
-/* My rofile Menu */
-/* Menu My Profile */
+
+.navbar .dropdown-menu .dropdown-item.text-danger:hover {
+  background-color: #a81313; /* Warna merah lebih gelap saat hover */
+  color: #fff; /* Warna teks putih saat hover */
+}
+
+/* Tombol menu dan profil */
+.navbar .nav-item .menu_atas,
 .navbar-nav .nav-item .nav-link.my_profile {
-  color: #fff; /* Teks berwarna putih */
+  display: flex;
+  align-items: center; /* Memastikan isi tombol sejajar vertikal */
+  justify-content: left; /* Memastikan isi tombol sejajar horizontal */
+  height: 40px; /* Tetapkan tinggi yang sama untuk semua tombol */
+  padding: 0 15px; /* Ruang horizontal untuk teks atau ikon */
+  border: 0px solid #cce1ff; /* Garis pemisah antar item menu */
+  border-radius: 0px; /* Tambahkan radius sudut untuk konsistensi */
+  margin: 3px; /* Jarak antar tombol */
   background-color: transparent; /* Latar belakang transparan */
-  border: 2px solid #fff; /* Menambahkan garis putih di sekitar menu */
-  border-radius: 20px; /* Menambahkan radius sudut untuk tampilan lebih lembut */
-  padding: 5px 15px; /* Memberikan padding untuk ruang lebih banyak di dalam tombol */
-  text-decoration: none; /* Menghilangkan garis bawah pada teks */
+  color: #fff; /* Warna teks */
   transition: all 0.3s ease; /* Transisi halus saat hover */
 }
-
-.navbar-nav .nav-item .nav-link.my_profile:hover {
-  background-color: #fff; /* Menambahkan latar belakang putih saat hover */
-  color: #7430f9; /* Mengubah warna teks menjadi warna navbar saat hover */
-  border-color: #7430f9; /* Menyesuaikan warna border saat hover */
+.navbar-nav .nav-item .nav-link.my_profile {
+  border: 2px solid #e9c177; /* Garis pemisah antar item menu */
+  border-radius: 5px;
 }
+
+.navbar .nav-item .menu_atas:hover,
+.navbar-nav .nav-item .nav-link.my_profile:hover {
+  background-color: #fff; /* Latar belakang putih saat hover */
+  color: #7430f9; /* Warna teks berubah */
+  border-color: #7430f9; /* Warna border berubah */
+}
+/* Foto profil lingkaran */
+.navbar-nav .nav-item .nav-link.my_profile img {
+  width: 30px; /* Tetapkan lebar foto */
+  height: 30px; /* Tetapkan tinggi foto */
+  border-radius: 50%; /* Membuat foto menjadi lingkaran */
+  object-fit: cover; /* Memastikan gambar tetap proporsional dalam lingkaran */
+  margin-right: 10px; /* Beri jarak antara foto dan teks */
+}
+.navbar .nav-link .menu-icon {
+  margin-right: 10px; /* Beri jarak ke kanan antara ikon dan teks */
+  display: inline-block; /* Pastikan ikon tetap sejajar dengan teks */
+  vertical-align: middle; /* Sejajarkan secara vertikal dengan teks */
+}
+/* Offcanvas customization */
+.offcanvas-end {
+  background-color: #5a20b5;
+}
+
+.offcanvas .offcanvas-header {
+  border-bottom: 1px solid #7430f9;
+}
+
+.offcanvas .offcanvas-title {
+  font-size: 16pt;
+  color: #fff;
+}
+
+.offcanvas .nav-link {
+  color: #fff;
+  margin: 5px 0;
+}
+
+.offcanvas .nav-link:hover {
+  color: #cce1ff;
+  background-color: #7430f9;
+}
+
+
 /* Breadcrumb */
 .breadcrumb {
   background-color: transparent;
@@ -81,12 +167,32 @@
 }
 
 /* Main Content Padding */
-body {
+.body_content{
   padding-top: 56px; /* Adjust according to navbar height */
-  padding-bottom: 56px; /* Adjust according to footer height */
+  padding-bottom: 200px; /* Adjust according to footer height */
   /* set background color with gradient */
   background: rgb(238,255,242);
   background: linear-gradient(90deg, rgba(238,255,242,1) 0%, rgba(228,229,255,1) 52%, rgba(255,238,253,1) 100%);
+}
+.body_login{
+  background: rgb(154,78,205);
+  background: linear-gradient(90deg, rgba(154,78,205,1) 0%, rgba(157,56,170,1) 50%, rgba(113,47,157,1) 100%);
+  padding-top: 56px; /* Adjust according to navbar height */
+  padding-bottom: 56px; /* Adjust according to footer height */
+}
+.title_page{
+  text-align: center;
+  font-size: 20pt;
+  color: #050505;
+  margin-top: 25px;
+  margin-bottom: 200px;
+}
+.title_page_login{
+  text-align: center;
+  font-size: 20pt;
+  color: #fffbfb;
+  margin-top: 25px;
+  margin-bottom: 200px;
 }
 /* Description page */
 p.text_description {
@@ -154,4 +260,224 @@ p.text_description {
   margin-bottom: 3px; /* Memberikan jarak antara ikon dan teks */
 }
 
+/* Preloader: menutupi seluruh halaman */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih semi transparan */
+  z-index: 9999; /* Pastikan di atas semua elemen lain */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* Spinner: animasi loading */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ccc; /* Warna luar spinner */
+  border-top: 5px solid #7430f9; /* Warna bagian yang berputar */
+  border-radius: 50%;
+  animation: spin 1s linear infinite; /* Efek animasi */
+}
+
+/* Animasi putar spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Tampilan dashboard */
+/* Global Dashboard Styles */
+.dashboard {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.dashboard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Dashboard Specific Styles */
+.card_dashboard_pelanggan {
+  background: linear-gradient(135deg, #7430f9, #9b51e0);
+  color: #fff;
+}
+
+.card_dashboard_transaksi {
+  background: linear-gradient(135deg, #00c853, #64dd17);
+  color: #fff;
+}
+
+.card_dashboard_kas {
+  background: linear-gradient(135deg, #2962ff, #448aff);
+  color: #fff;
+}
+
+.card_dashboard_pengiriman {
+  background: linear-gradient(135deg, #ff6d00, #ffab00);
+  color: #fff;
+}
+
+/* Card Body Styles */
+.dashboard .card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Card Title Styles */
+.dashboard .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard .card-title i {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+/* Count Styles */
+span[class^="count_"] {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .dashboard .card-title {
+    font-size: 1rem;
+  }
+
+  span[class^="count_"] {
+    font-size: 1.2rem;
+  }
+
+  .dashboard .card-body {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard .card-title {
+    font-size: 0.9rem;
+  }
+
+  span[class^="count_"] {
+    font-size: 1rem;
+  }
+}
+
+a.title_page{
+  color: #7532f9;
+}
+
+/* style untuk halaman login */
+.button_login {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 50px; /* Rounded */
+  background: linear-gradient(45deg, #007bff, #0056b3); /* Gradient warna biru */
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.button_login:hover {
+  background: linear-gradient(45deg, #0056b3, #003f7f); /* Warna lebih gelap saat hover */
+}
+
+.button_google {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 50px; /* Rounded */
+  background: linear-gradient(45deg, #ff5f6d, #ffc371); /* Gradient warna merah ke oranye */
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.button_google:hover {
+  background: linear-gradient(45deg, #ff4d5a, #ffab61); /* Warna lebih gelap saat hover */
+}
+
+/* Untuk mengatur Foto */
+.position-relative {
+  position: relative;
+  display: inline-block;
+  width: 70%; /* Pastikan ukuran mengikuti gambar */
+}
+
+.foto_profil {
+  display: block; /* Menghindari margin tambahan */
+  width: 100%; /* Sesuaikan dengan container */
+  height: auto; /* Untuk menjaga rasio gambar */
+  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+  transition: 0.3s ease; /* Efek transisi */
+}
+
+.overlay-profil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Sesuaikan overlay dengan container */
+  height: 100%; /* Sama dengan tinggi gambar */
+  background-color: rgba(0, 0, 0, 0.6); /* Warna gelap transparan */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Default disembunyikan */
+  transition: opacity 0.3s ease; /* Transisi lembut */
+  border-radius: 50%; /* Pastikan overlay berbentuk lingkaran */
+}
+
+.upload_foto_profil:hover .foto_profil {
+  filter: brightness(0.5); /* Gelapkan gambar saat hover */
+}
+
+.upload_foto_profil:hover .overlay-profil {
+  opacity: 1; /* Tampilkan overlay saat hover */
+}
+
+.text-upload {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.image_album {
+  height: 200px; /* Sesuaikan ketinggian yang diinginkan */
+  object-fit: cover; /* Menjaga rasio gambar */
+  width: 100%; /* Mengisi lebar kontainer */
+}
